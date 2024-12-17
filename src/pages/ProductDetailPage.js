@@ -7,8 +7,6 @@ const ProductDetailPage = ({ products }) => {
     const { productId } = useParams();  // Extracts the productId from the URL
     const dispatch = useDispatch();
 
-    console.log("productId products", productId, products);
-
 
     // Find the product from the products array based on the productId from the URL
     const product = products.find((p) => p.id === parseInt(productId));
